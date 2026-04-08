@@ -47,6 +47,69 @@ body {
 }
 
 /* ============================================
+   欢迎消息 & HTML 内容样式（v-html 渲染）
+   ============================================ */
+.welcome-title {
+  color: #d4af37;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.welcome-hint {
+  color: #787b86;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.welcome-list {
+  margin-top: 6px;
+  padding-left: 18px;
+  color: #d1d4dc;
+}
+
+.welcome-list li {
+  margin-bottom: 4px;
+}
+
+.greeting {
+  color: #d4af37;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.greeting ~ p {
+  margin-bottom: 6px;
+}
+
+/* 指令列表（兜底回复） */
+.intents-list {
+  background: #111827;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-top: 8px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.intents-list li {
+  color: #d1d4dc;
+  font-size: 12px;
+  padding: 4px 0;
+  padding-left: 18px;
+  position: relative;
+}
+
+.intents-list li::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  color: #d4af37;
+  font-weight: 700;
+}
+
+/* ============================================
    通用工具类
    ============================================ */
 .text-gold { color: #d4af37; }

@@ -29,13 +29,13 @@
         <ChatMessage
           v-if="messages.length === 0"
           role="agent"
-          html='<div class="greeting">您好！我是加密货币交易助手</div>
+          html='<p class="welcome-title">您好！我是加密货币交易助手</p>
                  <p>我可以帮您 <strong>查询报价</strong>、<strong>执行交易</strong> 和 <strong>协商价格</strong>。</p>
-                 <p style="margin-top: 10px; color: #787b86;">请告诉我：</p>
-                 <ol style="margin-top: 6px; padding-left: 18px;">
-                   <li>您要交易哪个<strong>交易对</strong>？（如 BTC/USD、USDT/USD 等）</li>
-                   <li>交易<strong>方向</strong>：买入还是卖出？</li>
-                   <li>交易<strong>数量</strong>或<strong>金额</strong>？</li>
+                 <p class="welcome-hint">请告诉我：</p>
+                 <ol class="welcome-list">
+                   <li>您要交易哪个 <strong>交易对</strong>？（如 BTC/USD、USDT/USD 等）</li>
+                   <li>交易 <strong>方向</strong>：买入还是卖出？</li>
+                   <li>交易 <strong>数量</strong> 或 <strong>金额</strong>？</li>
                  </ol>'
         />
 
